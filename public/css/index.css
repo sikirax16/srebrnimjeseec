@@ -1,0 +1,498 @@
+/* DEVELOPMENT
+--------------------------------------------------
+-------------------------------------------------- */
+/*.grid div {*/
+    /*border: 1px solid black;*/
+    /*margin:0;*/
+    /*padding: 0;*/
+/*}*/
+/*div {*/
+     /*border: 2px solid red;*/
+     /*padding: 0;*/
+     /*width: 100%;*/
+ /*}*/
+/*-------------------------------------------------*/
+
+
+/* CUSTOMIZE THE CAROUSEL
+--------------------------------------------------
+-------------------------------------------------- */
+.item img {
+    max-height: 750px;
+}
+
+
+/* ITEM #1 postavljanje teksta u gornji desni kut */
+.pomen .carousel-caption {
+    /*padding-bottom: 20%;*/
+    top: 45%;
+    right: -20%;
+    transform: translateY(-50%);
+    color: transparent;
+}
+.pomen h1 {
+    background-size: cover;
+    text-transform: lowercase;
+    font-size: 6em;
+    font-family: 'Mogra', cursive;
+    filter: brightness(1.8);
+}
+/* ITEM #2 novootvoreni salon Srebrni Mjesec*/
+.salon .carousel-caption {
+    top: 40%;
+    transform: translateY(-50%);
+    color: transparent;
+}
+
+.salon h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    color: white;
+    font-family: 'Nosifer', cursive;
+    background: url("/images/font5.jpg") -180px -80px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    filter: brightness(3);
+}
+
+.salon h2 {
+    font-size: 7.8em;
+    background: url("/images/font11.jpg") -180px -80px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    filter: brightness(2.7);
+    /*-webkit-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);*/
+    /*-moz-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);*/
+    /*box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);*/
+}
+
+/* ITEM #3 postavljanje teksta na sredinu horizontalno i vertikalno */
+.arena .carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    color: transparent;
+}
+.arena h1 {
+    font-size: 8.3em;
+    background: url("/images/font11.jpg") -180px -80px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    filter: brightness(2.7);
+}
+.arena a {
+    border-radius: 400px;
+    background: rgba(65, 105, 225, 0.7);
+    color: white;
+    font-size: 4em;
+}
+
+.arena a:hover {
+    color: rgba(65, 105, 225, 0.9);
+    background: rgba(255, 255, 255, 0.8);
+}
+
+@media screen and (max-width: 1300px) {
+    .pomen .carousel-caption {
+        top: 40%;
+    }
+    .pomen h1 {
+        font-size: 5.5em;
+    }
+    .salon h1 {
+        font-size: 2.2em;
+    }
+
+    .salon h2 {
+        font-size: 7em;
+    }
+    .arena h1 {
+        font-size: 8em;
+    }
+    .arena a {
+        font-size: 3.5em;
+    }
+    div {
+        border: 1px solid white;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .pomen h1 {
+        font-size: 5em;
+    }
+    .salon h1 {
+        font-size: 2em;
+    }
+
+    .salon h2 {
+        font-size: 6em;
+    }
+    .arena h1 {
+        font-size: 6.5em;
+    }
+    .arena a {
+        font-size: 3em;
+    }
+    div {
+        border: 1px solid purple;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .pomen .carousel-caption {
+        top: 35%;
+    }
+    .pomen h1 {
+        font-size: 3.5em;
+    }
+    .salon h1 {
+        font-size: 1.8em;
+    }
+
+    .salon h2 {
+        font-size: 4.5em;
+    }
+    .arena h1 {
+        font-size: 5em;
+    }
+    .arena a {
+        font-size: 2em;
+    }
+    div {
+        border: 1px solid yellow;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .pomen h1 {
+        font-size: 3em;
+    }
+    .salon h1 {
+        font-size: 1.7em;
+    }
+
+    .salon h2 {
+        font-size: 4em;
+    }
+    .arena h1 {
+        font-size: 3.5em;
+    }
+    .arena a {
+        font-size: 1.5em;
+    }
+    div {
+        border: 1px solid green;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .pomen h1 {
+        font-size: 2em;
+    }
+    .salon h1 {
+        font-size: 1.2em;
+    }
+
+    .salon h2 {
+        font-size: 3em;
+    }
+    .arena .carousel-caption {
+        top: 40%;
+    }
+    .arena h1 {
+        font-size: 3em;
+    }
+    .arena a {
+        font-size: 1.2em;
+    }
+    div {
+        border: 1px solid red;
+    }
+}
+@media screen and (max-width: 500px) {
+    .salon h1 {
+        font-size: 1em;
+    }
+
+    .salon h2 {
+        font-size: 2em;
+    }
+    .arena h1 {
+        font-size: 2em;
+    }
+    .arena a {
+        font-size: 0.8em;
+    }
+    div {
+        border: 1px solid green;
+    }
+}
+
+/*-------------------------------------------------*/
+
+/* PROMOCIJA SALONA
+--------------------------------------------------
+-------------------------------------------------- */
+.text-container {
+    padding-top: 5%;
+    padding-bottom: 2%;
+
+}
+/*-------------------------------------------------*/
+
+/* SLIKE PROSTORA
+--------------------------------------------------
+-------------------------------------------------- */
+
+.img-container {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    /*background-color: rgba(255, 255, 255, 0.1);*/
+}
+.img-container img {
+    margin: 0;
+    padding: 0;
+    transition: 0.2s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.6);
+}
+.img-container img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+/*.img-container img:hover {*/
+    /*transform: scale(1.2);*/
+/*}*/
+
+.img-container div {
+    margin:0;
+    padding: 0.6%;
+    /*padding: 6px;*/
+    /*padding: 0;*/
+    /*border: 1px solid black;*/
+}
+
+/*-------------------------------------------------*/
+
+
+/* MASAŽE U SALONU
+--------------------------------------------------
+-------------------------------------------------- */
+.masage {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.masage img {
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6);
+}
+.masage .row {
+    display: table;
+}
+
+.masage [class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
+}
+.masage-ponuda {
+    text-align: left;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.masage-ponuda .glyphicon {
+    font-size: 20px;
+}
+.masage-ponuda p {
+    font-size: 2em;
+    text-align: left;
+}
+@media screen and (min-width: 1100px) {
+    .masage-ponuda {
+        padding-left: 0;
+    }
+}
+@media screen and (max-width: 800px) {
+    /*.masage {*/
+        /*padding-left: 40%;*/
+    /*}*/
+    /*.masage img {*/
+        /*width: 60%;*/
+    /*}*/
+    .masage-ponuda .glyphicon {
+        font-size: 10px;
+    }
+    .masage-ponuda p {
+        font-size: 1em;
+    }
+}
+
+
+
+.masage-promotion {
+    width: 100%;
+    /*height: 300px;*/
+    display: flex;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: rgba(65, 105, 225, 0.5);
+}
+.masage-promotion p {
+    margin-left: 10%;
+    width: 80%;
+}
+.masage-promotion .glyphicon {
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    display:block;
+    padding: 2%;
+}
+@media screen and (max-width: 450px) {
+    .masage-promotion p {
+        font-size: 1em;
+    }
+}
+/*-------------------------------------------------*/
+
+
+/*5 Stars salon promocija
+--------------------------------------------------
+-------------------------------------------------- */
+
+.stars {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.stars .row {
+    display: table;
+}
+
+.stars [class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
+}
+.stars img {
+    border-radius: 10px;
+    box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.6);
+}
+.stars button {
+    border-radius: 400px;
+    background: rgba(65, 105, 225, 0.7);
+    color: white;
+    font-size: 3.5em;
+}
+
+.stars button:hover {
+    color: rgba(65, 105, 225, 0.9);
+    background: rgba(255, 255, 255, 0.8);
+}
+/*-------------------------------------------------*/
+
+
+/* POPUSTI
+--------------------------------------------------
+-------------------------------------------------- */
+
+.popust {
+    background: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.4)), url("/images/srebrni_mjesec/15.jpg") no-repeat fixed;
+    background-size: cover;
+    height: 650px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popust h1 {
+     font-size: 9em;
+}
+.popust h2 {
+    font-size: 6em;
+    color: white;
+    opacity: 1;
+}
+.popust a {
+    border-radius: 400px;
+    background: rgba(65, 105, 225, 0.7);
+    color: white;
+    font-size: 4em;
+ }
+
+.popust a:hover {
+    color: rgba(65, 105, 225, 0.9);
+    background: rgba(255, 255, 255, 0.8);
+}
+
+@media screen and (max-width: 1000px) {
+    .popust h1 {
+        font-size: 8em;
+    }
+    .popust h2 {
+        font-size: 4em;
+    }
+    .popust a {
+
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .popust{
+        height: 400px;
+        width: 100%;
+    }
+    .popust h1 {
+        font-size: 6em;
+    }
+
+    .popust h2 {
+        font-size: 3em;
+    }
+    .popust a {
+
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .popust{
+        height: 350px;
+        width: 100%;
+    }
+    .popust h1 {
+        font-size: 3.5em;
+    }
+    .popust h2 {
+        font-size: 2.5em;
+    }
+    .popust a {
+
+        font-size: 1.5em;
+    }
+}
+/*-------------------------------------------------*/
+
+
+/* GOOGLE MAPS
+--------------------------------------------------
+-------------------------------------------------- */
+.lokacija {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+#googleMap {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 35%;
+    padding-top: 30px;
+    position: relative;
+    text-align: center;
+}
+/*-------------------------------------------------*/

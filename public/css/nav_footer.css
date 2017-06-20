@@ -1,0 +1,99 @@
+/*.brand-centered {*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*position: absolute;*/
+    /*width: 100%;*/
+    /*left: 0;*/
+    /*top: 0;*/
+/*}*/
+/*.brand-centered img {*/
+    /*margin-top: 20px;*/
+    /*width: 300px;*/
+    /*opacity: 1;*/
+/*}*/
+/*.brand-centered .navbar-brand {*/
+    /*display: flex;*/
+    /*align-items: center;*/
+/*}*/
+/*.navbar-toggle {*/
+     /*z-index: 1;*/
+ /*}*/
+
+/*
+    navbar colors
+*/
+
+.navbar-custom {
+    background: url("/images/navigacija.jpg") no-repeat;
+    /*background-color: transparent;*/
+    background-size: cover;
+    border-radius:0;
+    /*padding-top: 10px;*/
+    opacity: 0.8;
+}
+.brand-style img {
+    margin-top: -30px;
+    width: 300px;
+    filter: brightness(0.9);
+}
+.navbar-custom .navbar-nav > li > a {
+    color: whitesmoke;
+    padding-left:20px;
+    padding-right:20px;
+    transition: all .2s ease;
+    font-size: 1.5em;
+}
+
+.navbar-custom .navbar-nav > li > a:hover, .nav > li > a:focus, .navbar-custom .navbar-nav .open>a  {
+    background-color: blue;
+    color: gold;
+}
+
+/* logo */
+
+.navbar-custom .navbar-brand {
+    color:silver;
+}
+
+/* dropdown icon */
+
+.navbar-custom .navbar-toggle {
+    background-color: silver;
+}
+.navbar-custom .icon-bar {
+    background-color: darkblue;
+}
+
+
+
+/*
+    footer
+*/
+footer {
+    background-color: white;
+}
+
+footer span.copyright{
+    line-height:40px;
+    text-transform:none
+}
+footer ul.quicklinks{
+    margin-bottom:0;
+    line-height:40px;
+    text-transform:none
+}
+ul.social-buttons li a{
+    display:block;
+    background-color:#222;
+    height:40px;
+    width:40px;
+    border-radius:100%;
+    font-size:20px;
+    line-height:40px;
+    color:#fff;outline:0;
+    -webkit-transition:all .3s;
+    -moz-transition:all .3s;
+    transition:all .3s}
+ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li a:hover{
+    background-color:#fed136
+}

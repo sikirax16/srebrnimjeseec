@@ -1,0 +1,73 @@
+body {
+    /*background-color: royalblue;*/
+    background: url("/images/pozadina/pozadina4.jpg") no-repeat fixed;
+    background-size: cover;
+    font-family: 'Mogra', cursive;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    background: url("/images/font2.png") -180px -80px;
+    /*background-size: cover;*/
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 5em;
+    padding-bottom: 2%;
+}
+p {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+}
+
+.sadrzaj {
+    padding-top: 50px;
+}
+@media screen and (max-width: 1200px) {
+    h1 {
+        font-size: 4em;
+    }
+    p {
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 1000px) {
+    h1 {
+        font-size: 3em;
+    }
+    p {
+        font-size: 1.3em;
+    }
+}
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    p {
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 450px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 0.7em;
+    }
+}
+
+
