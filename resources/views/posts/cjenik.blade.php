@@ -4,110 +4,144 @@
     <div class="sadrzaj">
 
         <h1>cjenik</h1>
+        {{--prikaz cijena frizura
+--------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------}}
+        @if (!$haircut->isEmpty())
+            <div class="container-fluid cjenik">
 
+                <div class="row">
+                    <div class="col-xs-2 dio">
+                        <p>Cijene frizura</p>
+                    </div>
+                    <div class="col-xs-10 naziv">
+
+                        <table class="table table-responsive">
+                            <tbody>
+                            @php ($counter = 0)
+                            @foreach($haircut as $price)
+                                @if($counter%2==0)
+                                    <tr class="cjenik-row">
+                                    @php ($counter++)
+                                @else
+                                    <tr>
+                                    @php ($counter++)
+                                @endif
+                                    <td><p class="text-left">{{ $price->naziv }}</p></td>
+                                    <td><p class="text-right">{{ $price->cijena }} kn</p></td>
+                                </tr>
+                            @endforeach
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        @endif
+        {{--prikaz cijena masaza
+--------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------}}
+        @if (!$massage->isEmpty())
         <div class="container-fluid cjenik">
             <div class="row">
-                <div class="col-xs-1 dio">
-                    <p>Cijene Frizura</p>
+                <div class="col-xs-2 dio">
+                    <p>Cijene masaza</p>
                 </div>
-                <div class="col-xs-11 naziv">
+                <div class="col-xs-10 naziv">
 
                     <table class="table table-responsive">
                         <tbody>
-                        <tr class="cjenik-row">
-                            <td><p>jedan</p></td>
-                            <td><p>25</p></td>
-                        </tr>
-                        <tr>
-                            <td><p>jedan</p></td>
-                            <td><p>25</p></td>
-                        </tr>
-                        <tr class="cjenik-row">
-                            <td><p>jedan</p></td>
-                            <td><p>25</p></td>
-                        </tr>
-                        <tr>
-                            <td><p>jedan</p></td>
-                            <td><p>25</p></td>
-                        </tr>
-                        <tr class="cjenik-row">
-                            <td><p>jedan</p></td>
-                            <td><p>25</p></td>
-                        </tr>
+                        @php ($counter = 0)
+                            @foreach($massage as $price)
+                                @if($counter%2==0)
+                                    <tr class="cjenik-row">
+                                    @php ($counter++)
+                                @else
+                                    <tr>
+                                    @php ($counter++)
+                                @endif
+                                    <td><p class="text-left">{{ $price->naziv }}</p></td>
+                                    <td><p>{{ $price->trajanje }} min</p></td>
+                                    <td><p class="text-right">{{ $price->cijena }} kn</p></td>
+                                </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
+        @endif
 
+        {{--prikaz cijena depilacija
+--------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------}}
+        @if (!$depilation->isEmpty())
         <div class="container-fluid cjenik">
             <div class="row">
-                <div class="col-xs-1 dio">
-                    <p>Cijene Frizura</p>
+                <div class="col-xs-2 dio">
+                    <p>Cijene depilacija</p>
                 </div>
-                <div class="col-xs-11 naziv">
+                <div class="col-xs-10 naziv">
 
                     <table class="table table-responsive">
                         <tbody>
-                        <tr class="cjenik-row">
-                            <td><p>jedan</p></td>
-                            <td><p>25</p></td>
-                        </tr>
-                        <tr>
-                            <td><p>jedan</p></td>
-                            <td><p>25</p></td>
-                        </tr>
-                        <tr class="cjenik-row">
-                            <td><p>jedan</p></td>
-                            <td><p>25</p></td>
-                        </tr>
-                        <tr>
-                            <td><p>jedan</p></td>
-                            <td><p>25</p></td>
-                        </tr>
-                        <tr class="cjenik-row">
-                            <td><p>jedan</p></td>
-                            <td><p>25</p></td>
-                        </tr>
+                        @php ($counter = 0)
+                            @foreach($depilation as $price)
+                                @if($counter%2==0)
+                                    <tr class="cjenik-row">
+                                    @php ($counter++)
+                                @else
+                                    <tr>
+                                    @php ($counter++)
+                                @endif
+
+                                <tr class="cjenik-row">
+                                    <td><p class="text-left">{{ $price->naziv }}</p></td>
+                                    <td><p class="text-right">{{ $price->cijena }} kn</p></td>
+                                </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
+        @endif
 
-        <div class="container-fluid cjenik">
-            <div class="row">
-                <div class="col-xs-1 dio">
-                    <p>Cijene Frizura</p>
-                </div>
-                <div class="col-xs-11 naziv">
-
-                    <table class="table table-responsive">
-                        <tbody>
-                        <tr class="cjenik-row">
-                            <td><p>jedan</p></td>
-                            <td><p>25</p></td>
-                        </tr>
-                        <tr>
-                            <td><p>jedan</p></td>
-                            <td><p>25</p></td>
-                        </tr>
-                        <tr class="cjenik-row">
-                            <td><p>jedan</p></td>
-                            <td><p>25</p></td>
-                        </tr>
-                        <tr>
-                            <td><p>jedan</p></td>
-                            <td><p>25</p></td>
-                        </tr>
-                        <tr class="cjenik-row">
-                            <td><p>jedan</p></td>
-                            <td><p>25</p></td>
-                        </tr>
-                        </tbody>
-                    </table>
+        {{--OGLASI
+--------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------}}
+        @if (!$oglasi->isEmpty())
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1>Oglasi</h1>
+                    </div>
+                    <div class="col-xs-12">
+                        @foreach($oglasi as $oglas)
+                            <div class="row oglas">
+                                @if($oglas->original_filename!="")
+                                    <div class="col-xs-6">
+                                        <img src="oglasi\{{ $oglas->original_filename }}" alt="{{ $oglas->id }}">
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <h1>{{ $oglas->naslov }}</h1>
+                                        <p>{{ $oglas->opis }}</p>
+                                        <p>{{ $oglas->kontakt }}</p>
+                                    </div>
+                                @else
+                                    <div class="col-xs-12">
+                                        <h1>{{ $oglas->naslov }}</h1>
+                                        <p>{{ $oglas->opis }}</p>
+                                        <p>{{ $oglas->kontakt }}</p>
+                                    </div>
+                                @endif
+                            </div>
+                        @endforeach
+                    </div>
                 </div>
             </div>
-        </div>
+        @endif
+
+
     </div>
 @endsection

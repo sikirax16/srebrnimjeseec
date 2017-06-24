@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\add_massage_prices;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades;
+use App\Depilacije;
+use App\Frizure;
+use App\Masaze;
+use App\Oglasi;
 use Illuminate\Support\Facades\Input;
 use Validator;
 use Response;
@@ -31,14 +32,30 @@ class HomeController extends Controller
      */
     public function index()
     {
-//        $users = DB::table('users')->get();
-//        $images = DB::table('slike')->get();
+//        dohvati sve slike iz baze
+        $images = upload_slike::all();
+//        dohvati sve cijene depilacija
+        $depilation = Depilacije::all();
+//        dohvati sve cijene masaza
+        $massage = Masaze::all();
+//        dohvati sve cijene frizura
+        $haircut = Frizure::all();
+//        dohvati sve oglase
+        $oglasi = Oglasi::all();
 
         return view('home', [
             'name' => 'home',
-//            'images' => $images
+            'images' => $images,
+            'depilation' => $depilation,
+            'massage' => $massage,
+            'haircut' => $haircut,
+            'oglasi' => $oglasi,
         ]);
     }
+    /**
+    * dodaj slike, spremi ih na bazu i u public folder
+    *
+    */
     public function multiple_upload() {
 //        getting all of the post data
         $files = Input::file('images');
@@ -67,27 +84,35 @@ class HomeController extends Controller
                     $entry->filename = $file->getFilename().'.'.$extension;
                     $entry->save();
                 }
-                if($uploadcount == $file_count) {
-                    Session::flash('success', 'Slike dodane u galeriju!');
-                    return Redirect::to('home');
-                } else {
-                    return Redirect::to('home')->withInput()-withErrors($validator);
-                }
             }
+            if($uploadcount == $file_count) {
+                Session::flash('success', 'Slike dodane u galeriju!');
+                return Redirect::to('home');
+            } else {
+                return Redirect::to('home')->withInput()-withErrors($validator);
+            }
+
         } else {
             Session::flash('success', 'Nije odabrana slika!!');
             return Redirect::to('home');
         }
 
     }
-    public function add_massage() {
+    /**
+     * izbrisi sliku
+     *
+     */
+    public function image_delete() {
 
-//        $entry = new add_massage_prices();
-////        $entry->naziv = ;
-////        $entry->cijena = $filename;
-//        $entry->save();
+        $entry = upload_slike::find(Input::get('id'));
 
-        Session::flash('success', 'Cijena dodana!!');
+
+        $file_path = 'frizure/'.$entry->original_filename;
+        unlink(public_path($file_path));
+
+        $entry->delete();
+
+        Session::flash('success', 'Slika izbrisana!!');
         return Redirect::to('home');
     }
 }

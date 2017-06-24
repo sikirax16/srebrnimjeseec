@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="sadrzaj">
+{{--<div class="sadrzaj">--}}
 {{--Početak carousel-a, prikaz tri glavne slike
 --------------------------------------------------------------------------------------------}}
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -71,15 +71,69 @@
 {{-----------------------------------------------------------------}}
 
 
+{{--Drugi salon 5 Stars
+--------------------------------------------------------------------------------------------}}
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 text-center">
+            <h1>Frizerski salon 5 Stars</h1>
+        </div>
+    </div>
+</div>
+<div class="container-fluid stars">
+    <div class="row">
+        <div class="col-xs-6">
+            <img src="images/5stars/18.jpg" />
+        </div>
+        <div class="col-xs-6 text-center">
+            <p>Uz naš glavni salon Srebrni Mjesec, imamo kapacitet za raditi više frizura istovremeno u dva salona.</p>
+            <p>Naš drugi salon nalazi se u blizini.</p>
+            {{--<button class="btn btn-default btn-xl" data-toggle="collapse" data-target="#5stars">Saznaj više</button>--}}
+        </div>
+    </div>
+</div>
+
+{{--<div id="5stars" class="container collapse stars">--}}
+{{--<div class="row">--}}
+{{--<div class="col-xs-12 text-center">--}}
+{{--<p>Uz naš glavni salon Srebrni Mjesec, imamo kapacitet za raditi više frizura istovremeno u dva salona.</p>--}}
+{{--</div>--}}
+{{--</div>--}}
+{{--</div>--}}
+{{-----------------------------------------------------------------}}
 
 {{--Slike prostora
 --------------------------------------------------------------------------------------------}}
         <div class="container-fluid img-container">
         <div class="row row-eq-height">
+
+            <div class="col-xs-4">
+                <img src="images/srebrni_mjesec/11.jpg" />
+            </div>
+            <div class="col-xs-4">
+                <img src="images/srebrni_mjesec/15.jpg" />
+            </div>
+            <div class="col-xs-4">
+                <img src="images/srebrni_mjesec/06.jpg" />
+            </div>
+
+            <div class="col-xs-8">
+                <img src="images/5stars/20.jpg" />
+            </div>
+            {{--<div class="col-xs-6">--}}
+            {{--<img src="images/srebrni_mjesec/16.jpg" />--}}
+            {{--</div>--}}
+            <div class="col-xs-4">
+                <img src="images/5stars/17.jpg" />
+            </div>
+            <div class="col-xs-4">
+                <img src="images/5stars/19.jpg" />
+            </div>
+
             <div class="col-xs-3">
                 <div class="row">
                     <div class="col-xs-12">
-                        <img src="images/srebrni_mjesec/01.jpg" />
+                        <img src="images/srebrni_mjesec/25.jpg" />
                     </div>
                 </div>
                 <div class="row">
@@ -88,15 +142,27 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xs-6">
+            <div class="col-xs-3">
                 <div class="row">
                     <div class="col-xs-12">
-                        <img src="images/srebrni_mjesec/06.jpg" />
+                        <img src="images/srebrni_mjesec/23.jpg" />
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
-                        <img src="images/srebrni_mjesec/11.jpg" />
+                        <img src="images/srebrni_mjesec/02.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <img src="images/srebrni_mjesec/07.jpg" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <img src="images/srebrni_mjesec/24.jpg" />
                     </div>
                 </div>
             </div>
@@ -112,6 +178,16 @@
                     </div>
                 </div>
             </div>
+            <div class="col-xs-4">
+                <img src="images/srebrni_mjesec/16.jpg" />
+            </div>
+            <div class="col-xs-4">
+                <img src="images/srebrni_mjesec/01.jpg" />
+            </div>
+            <div class="col-xs-4">
+                <img src="images/srebrni_mjesec/05.jpg" />
+            </div>
+
         </div>
     </div>
 {{-----------------------------------------------------------------}}
@@ -185,28 +261,6 @@
         </div>
 {{-----------------------------------------------------------------}}
 
-{{--Drugi salon 5 Stars
---------------------------------------------------------------------------------------------}}
-        <div class="container stars">
-            <div class="row">
-                <div class=" col-xs-6">
-                        <img src="images/5stars/18.jpg" />
-                </div>
-                <div class="col-xs-6 text-center">
-                    <h1>Frizerski salon</br>5 Stars</h1>
-                    <button class="btn btn-default btn-xl" data-toggle="collapse" data-target="#5stars">Saznaj više</button>
-                </div>
-            </div>
-        </div>
-
-        <div id="5stars" class="container collapse stars">
-            <div class="row">
-                <div class="col-xs-12 text-center">
-                    <p>Uz naš glavni salon Srebrni Mjesec, imamo kapacitet za raditi više frizura istovremeno u dva salona.</p>
-                </div>
-            </div>
-        </div>
-{{-----------------------------------------------------------------}}
 
 
 {{--Prikaz popusta
@@ -295,5 +349,5 @@
 
 {{-----------------------------------------------------------------}}
 
-</div>
+{{--</div>--}}
 @endsection

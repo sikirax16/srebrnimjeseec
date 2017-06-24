@@ -1,0 +1,26 @@
+.slike-dashboard {
+    margin-bottom: 2%;
+}
+.stiling img{
+    width: 100%;
+}
+.gumb{
+    margin-right: 1%;
+}
+
+.dashboard-row {
+    background: rgba(0,0,0,0.2);
+}
+
+.form-row {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.stiling b {
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: 1.5em;
+}
+.naslov {
+   font-size: 2em;
+}

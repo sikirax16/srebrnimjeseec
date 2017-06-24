@@ -20,51 +20,13 @@ class GalerijaController extends Controller
 {
     public function index()
     {
+
+//        dohvati sve slike iz baze
+        $images = upload_slike::all();
+
         return view('posts/galerija', [
-            'name' => 'Galerija'
+            'name' => 'Galerija',
+            'images' => $images,
         ]);
     }
-//    public function multiple_upload() {
-////        getting all of the post data
-//        $files = Input::file('images');
-////        making counting of uploaded images
-//        $file_count = count($files);
-////        start count how many uploaded
-//        $uploadcount = 0;
-//
-//        foreach ($files as $file) {
-////            required mimes (png, jpg, jpeg)
-//            $rules = array('file' => 'required');
-//            $validator = Validator::make(array('file' => $file), $rules);
-//            if($validator->passes()){
-////                upload folder in public directory
-//                $destinationPath = 'galerija';
-//                $filename = $file->getClientOriginalName();
-//                $upload_success = $file->move($destinationPath, $filename);
-//                $uploadcount ++;
-//
-////                save into database
-//
-//                $extension = $file->getClientOriginalExtension();
-//                $entry = new upload_slike();
-//                $entry->mime = $file->getClientMimeType();
-//                $entry->original_filename = $filename;
-//                $entry->filename = $file->getFilename().'.'.$extension;
-//                $entry->save();
-//            }
-//            if($uploadcount == $file_count) {
-//                Session::flash('success', 'Slike dodane u galeriju!');
-//                return Redirect::to('home');
-//            } else {
-//                return Redirect::to('home')->withInput()-withErrors($validator);
-//            }
-//
-//
-//
-//
-//        }
-//
-//
-//
-//    }
 }

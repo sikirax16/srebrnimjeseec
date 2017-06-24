@@ -84,7 +84,7 @@ footer ul.quicklinks{
 }
 ul.social-buttons li a{
     display:block;
-    background-color:#222;
+    background-color:silver;
     height:40px;
     width:40px;
     border-radius:100%;
@@ -95,5 +95,5 @@ ul.social-buttons li a{
     -moz-transition:all .3s;
     transition:all .3s}
 ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li a:hover{
-    background-color:#fed136
+    background-color:royalblue;
 }

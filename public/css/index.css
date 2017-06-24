@@ -363,6 +363,8 @@
 -------------------------------------------------- */
 
 .stars {
+    margin-left: 2%;
+    margin-right: 2%;
     padding-top: 2%;
     padding-bottom: 2%;
 }
@@ -398,9 +400,10 @@
 -------------------------------------------------- */
 
 .popust {
-    background: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.4)), url("/images/srebrni_mjesec/15.jpg") no-repeat fixed;
+    background: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.2)), url("/images/5stars/21.jpg") no-repeat fixed;
+    /*background: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.4)), url("/images/srebrni_mjesec/15.jpg") no-repeat fixed;*/
     background-size: cover;
-    height: 650px;
+    height: 750px;
     width: 100%;
     display: flex;
     justify-content: center;
