@@ -15,6 +15,7 @@ use Validator;
 use Response;
 use Redirect;
 use Session;
+use Image;
 
 class OglasController
 {
