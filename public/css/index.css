@@ -112,9 +112,6 @@
     .arena a {
         font-size: 3.5em;
     }
-    div {
-        border: 1px solid white;
-    }
 }
 @media screen and (max-width: 1200px) {
     .pomen h1 {
@@ -132,9 +129,6 @@
     }
     .arena a {
         font-size: 3em;
-    }
-    div {
-        border: 1px solid purple;
     }
 }
 @media screen and (max-width: 1000px) {
@@ -157,9 +151,6 @@
     .arena a {
         font-size: 2em;
     }
-    div {
-        border: 1px solid yellow;
-    }
 }
 
 @media screen and (max-width: 800px) {
@@ -178,9 +169,6 @@
     }
     .arena a {
         font-size: 1.5em;
-    }
-    div {
-        border: 1px solid green;
     }
 }
 
@@ -204,9 +192,6 @@
     .arena a {
         font-size: 1.2em;
     }
-    div {
-        border: 1px solid red;
-    }
 }
 @media screen and (max-width: 500px) {
     .salon h1 {
@@ -221,9 +206,6 @@
     }
     .arena a {
         font-size: 0.8em;
-    }
-    div {
-        border: 1px solid green;
     }
 }
 
@@ -363,10 +345,8 @@
 -------------------------------------------------- */
 
 .stars {
-    margin-left: 2%;
-    margin-right: 2%;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 2%;
 }
 .stars .row {
     display: table;

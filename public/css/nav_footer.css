@@ -70,30 +70,24 @@
     footer
 */
 footer {
-    background-color: white;
+    padding-top: 1%;
+    background-color: whitesmoke;
 }
-
-footer span.copyright{
-    line-height:40px;
-    text-transform:none
+footer p {
+    padding-top: 2%;
+    padding-left: 2%;
+    color: royalblue;
+    text-align: left;
 }
-footer ul.quicklinks{
-    margin-bottom:0;
-    line-height:40px;
-    text-transform:none
+.social-buttons i{
+    text-align: center;
+    font-size:30px;
+    color:royalblue;
 }
-ul.social-buttons li a{
-    display:block;
-    background-color:silver;
-    height:40px;
-    width:40px;
-    border-radius:100%;
-    font-size:20px;
-    line-height:40px;
-    color:#fff;outline:0;
-    -webkit-transition:all .3s;
-    -moz-transition:all .3s;
-    transition:all .3s}
-ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li a:hover{
-    background-color:royalblue;
+.social-buttons a:hover{
+    text-decoration: none;
+}
+.social-buttons img{
+    height:50px;
+    width:50px;
 }

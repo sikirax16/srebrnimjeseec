@@ -38,6 +38,11 @@ class OglasController
                         $filename = $file->getClientOriginalName();
                         $upload_success = $file->move($destinationPath, $filename);
 
+
+//                    provjeri dali je slika dobro orijentirana, u slucaju da ni ispravi gresku
+                        $file_path = 'oglasi/'.$filename;
+                        Image::make($file_path)->orientate()->save($file_path);
+
                         //                save into database
 
                         $extension = $file->getClientOriginalExtension();

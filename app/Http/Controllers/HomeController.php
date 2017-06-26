@@ -12,6 +12,7 @@ use Response;
 use Redirect;
 use Session;
 use App\upload_slike;
+use Image;
 
 class HomeController extends Controller
 {
@@ -75,6 +76,10 @@ class HomeController extends Controller
                     $upload_success = $file->move($destinationPath, $filename);
                     $uploadcount ++;
 
+//                    provjeri dali je slika dobro orijentirana, u slucaju da ni ispravi gresku
+                    $file_path = 'frizure/'.$filename;
+                    Image::make($file_path)->orientate()->save($file_path);
+
     //                save into database
 
                     $extension = $file->getClientOriginalExtension();
@@ -115,4 +120,5 @@ class HomeController extends Controller
         Session::flash('success', 'Slika izbrisana!!');
         return Redirect::to('home');
     }
+
 }

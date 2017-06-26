@@ -73,26 +73,27 @@
 
 {{--Drugi salon 5 Stars
 --------------------------------------------------------------------------------------------}}
+<div class="stars">
 <div class="container">
     <div class="row">
-        <div class="col-xs-12 text-center">
-            <h1>Frizerski salon 5 Stars</h1>
-        </div>
+
     </div>
 </div>
-<div class="container-fluid stars">
+<div class="container-fluid">
     <div class="row">
         <div class="col-xs-6">
             <img src="images/5stars/18.jpg" />
         </div>
         <div class="col-xs-6 text-center">
-            <p>Uz naš glavni salon Srebrni Mjesec, imamo kapacitet za raditi više frizura istovremeno u dva salona.</p>
+            <div class="col-xs-12 text-center">
+                <h1>Frizerski salon 5 Stars</h1>
+            </div><p>Uz naš glavni salon Srebrni Mjesec, imamo kapacitet za raditi više frizura istovremeno u dva salona.</p>
             <p>Naš drugi salon nalazi se u blizini.</p>
             {{--<button class="btn btn-default btn-xl" data-toggle="collapse" data-target="#5stars">Saznaj više</button>--}}
         </div>
     </div>
 </div>
-
+</div>
 {{--<div id="5stars" class="container collapse stars">--}}
 {{--<div class="row">--}}
 {{--<div class="col-xs-12 text-center">--}}

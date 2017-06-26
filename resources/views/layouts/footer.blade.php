@@ -1,26 +1,16 @@
-<footer class="footer-pozadina">
+<footer>
     <div class="container">
-        <div class="row">
+        <div class="row social-buttons">
             <div class="col-md-4">
-                <span class="copyright">Copyright &copy; Marino Pereša 2017</span>
+                <i>Kontakt: </i>
             </div>
             <div class="col-md-4">
-                <ul class="list-inline social-buttons">
-                    <li><a href="#"><i class="f fa-twitter"></i></a>
-                    </li>
-                    <li><a href="#"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                    </li>
-                </ul>
+                <a href="https://web.facebook.com/sreberni.mjesec/?fref=ts"><i><img src="images/facebook.png" /> Srebrni Mjesec</i></a>
+                <p><i class="glyphicon glyphicon-earphone"> 052/418-900</i></p>
             </div>
             <div class="col-md-4">
-                <ul class="list-inline quicklinks">
-                    <li><a href="#">Privacy Policy</a>
-                    </li>
-                    <li><a href="#">Terms of Use</a>
-                    </li>
-                </ul>
+                <a href="https://web.facebook.com/Frizerski-Salon-5-Stars-157392858128345/?ref=ts&fref=ts&_rdc=1&_rdr"><i><img src="images/facebook.png" /> 5 Stars</i></a>
+                <p><i class="glyphicon glyphicon-earphone"> 052/210-244</i></p>
             </div>
         </div>
     </div>
