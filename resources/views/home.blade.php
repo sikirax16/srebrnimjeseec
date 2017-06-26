@@ -6,11 +6,11 @@
         <div class="col-md-12">
             @if(Session::has('success'))
                 <div class="alert-box success">
-                    <h2>{!! Session::get('success') !!}</h2>
+                    <h4>{!! Session::get('success') !!}</h4>
                 </div>
             @endif
             @if(Session::has('error'))
-                <p>{!! Session::get('error') !!}</p>
+                <h5>{!! Session::get('error') !!}</h5>
             @endif
         </div>
         {{--dashboard za dodavanje i uklanjanje slika

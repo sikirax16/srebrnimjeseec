@@ -4,6 +4,14 @@
 .stiling img{
     width: 100%;
 }
+.stiling h4{
+    font-size: 3em;
+    color: green;
+}
+.stiling h5{
+    font-size: 3em;
+    color: red;
+}
 .gumb{
     margin-right: 1%;
 }
