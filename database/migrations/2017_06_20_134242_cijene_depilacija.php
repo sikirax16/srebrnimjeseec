@@ -18,6 +18,7 @@ class CijeneDepilacija extends Migration
             $table->increments('id');
             $table->string('naziv');
             $table->integer('cijena');
+            $table->integer('vosak');
         });
     }
 

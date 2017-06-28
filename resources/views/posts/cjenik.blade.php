@@ -18,6 +18,10 @@
 
                         <table class="table table-responsive">
                             <tbody>
+                            <tr class="headline">
+                                <td><p class="text-left text-uppercase text-primary">naziv </p></td>
+                                <td><p class="text-right text-uppercase text-primary">cijena</p></td>
+                            </tr>
                             @php ($counter = 0)
                             @foreach($haircut as $price)
                                 @if($counter%2==0)
@@ -25,12 +29,12 @@
                                     @php ($counter++)
                                 @else
                                     <tr>
-                                    @php ($counter++)
-                                @endif
-                                    <td><p class="text-left">{{ $price->naziv }}</p></td>
-                                    <td><p class="text-right">{{ $price->cijena }} kn</p></td>
-                                </tr>
-                            @endforeach
+                                        @php ($counter++)
+                                        @endif
+                                        <td><p class="text-left">{{ $price->naziv }}</p></td>
+                                        <td><p class="text-right">{{ $price->cijena }} kn</p></td>
+                                    </tr>
+                                    @endforeach
 
                             </tbody>
                         </table>
@@ -42,50 +46,67 @@
 --------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------}}
         @if (!$massage->isEmpty())
-        <div class="container-fluid cjenik">
-            <div class="row">
-                <div class="col-xs-2 dio">
-                    <p>Cijene masaza</p>
-                </div>
-                <div class="col-xs-10 naziv">
+            <div class="container-fluid cjenik">
+                <div class="row">
+                    <div class="col-xs-2 dio">
+                        <p>Cijene masaza</p>
+                    </div>
+                    <div class="col-xs-10 naziv">
 
-                    <table class="table table-responsive">
-                        <tbody>
-                        @php ($counter = 0)
-                            @foreach($massage as $price)
-                                @if($counter%2==0)
-                                    <tr class="cjenik-row">
-                                    @php ($counter++)
-                                @else
-                                    <tr>
-                                    @php ($counter++)
-                                @endif
-                                    <td><p class="text-left">{{ $price->naziv }}</p></td>
-                                    <td><p>{{ $price->trajanje }} min</p></td>
-                                    <td><p class="text-right">{{ $price->cijena }} kn</p></td>
+
+                        <table class="table table-responsive">
+                            <tbody>
+                                <tr class="headline">
+                                    <td><p class="text-left text-uppercase text-primary">naziv </p></td>
+                                    <td><p class="text-center text-uppercase text-primary">trajanje</p></td>
+                                    <td><p class="text-right text-uppercase text-primary">cijena</p></td>
                                 </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
+                                @php ($counter = 0)
+                                @foreach($massage as $price)
+                                    @if($counter%2==0)
+                                        <tr class="cjenik-row">
+                                        @php ($counter++)
+                                    @else
+                                        <tr>
+                                            @php ($counter++)
+                                            @endif
+                                            <td><p class="text-left">{{ $price->naziv }}</p></td>
+                                            @if($price->trajanje!=0)
+                                                <td><p class="text-center">{{ $price->trajanje }} min</p></td>
+                                            @else
+                                                <td><p></p></td>
+                                            @endif
+                                            <td><p class="text-right">{{ $price->cijena }} kn</p></td>
+                                        </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+
+                    </div>
                 </div>
             </div>
-        </div>
         @endif
 
         {{--prikaz cijena depilacija
 --------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------}}
-        @if (!$depilation->isEmpty())
-        <div class="container-fluid cjenik">
-            <div class="row">
-                <div class="col-xs-2 dio">
-                    <p>Cijene depilacija</p>
-                </div>
-                <div class="col-xs-10 naziv">
+        @if (!$massage->isEmpty())
+            <div class="container-fluid cjenik">
+                <div class="row">
+                    <div class="col-xs-2 dio">
+                        <p>Cijene depilacija</p>
+                    </div>
+                    <div class="col-xs-10 naziv">
 
-                    <table class="table table-responsive">
-                        <tbody>
-                        @php ($counter = 0)
+
+                        <table class="table table-responsive">
+                            <tbody>
+                                <tr class="headline">
+                                    <td><p class="text-left text-uppercase text-primary">naziv </p></td>
+                                    <td><p class="text-right text-uppercase text-primary">obična</p></td>
+                                    <td><p class="text-right text-uppercase text-primary">s voskom</p></td>
+                                </tr>
+                            @php ($counter = 0)
                             @foreach($depilation as $price)
                                 @if($counter%2==0)
                                     <tr class="cjenik-row">
@@ -94,17 +115,20 @@
                                     <tr>
                                     @php ($counter++)
                                 @endif
-
-                                <tr class="cjenik-row">
-                                    <td><p class="text-left">{{ $price->naziv }}</p></td>
-                                    <td><p class="text-right">{{ $price->cijena }} kn</p></td>
-                                </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
+                                        <td><p class="text-left">{{ $price->naziv }}</p></td>
+                                        <td><p class="text-right">{{ $price->cijena }} kn</p></td>
+                                        @if($price->vosak != 0)
+                                            <td><p class="text-right">+ {{ $price->vosak }} kn</p></td>
+                                        @else
+                                            <td><p></p></td>
+                                        @endif
+                                    </tr>
+                                    @endforeach
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-        </div>
         @endif
 
         {{--OGLASI

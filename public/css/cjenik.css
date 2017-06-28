@@ -40,7 +40,9 @@
 .dio {
     border-right: 2px solid black;
 }
-
+.headline {
+    background: rgba(0,0,0,0.5);
+}
 .dio p {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;

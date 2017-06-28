@@ -35,6 +35,11 @@ class DepilacijeController
             Session::flash('error', 'Cijena nedostaje!!');
             return Redirect::to('home');
         }
+        if(Input::get('cijena_d')!=""){
+            $entry->vosak = Input::get('vosak');
+        }else{
+            $entry->vosak = 0;
+        }
         $entry->save();
 
         Session::flash('success', 'Cijena dodana!!');
@@ -49,6 +54,7 @@ class DepilacijeController
         $entry = Depilacije::find(Input::get('id'));
         $entry->naziv = Input::get('naziv_d');
         $entry->cijena = Input::get('cijena_d');
+        $entry->vosak = Input::get('vosak');
         $entry->save();
 
         Session::flash('success', 'Cijena izmjenjena!!');

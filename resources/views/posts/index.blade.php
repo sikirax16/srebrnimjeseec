@@ -17,7 +17,7 @@
                 <div class="item active pomen">
                     <img src="/images/jumbotron/jumbotron1.png" alt="Srebrni Mjesec #1">
                     <div class="carousel-caption">
-                        <h1>Ćerko tebi u</br>pomen</h1>
+                        <h1>kćeri tebi u</br>pomen</h1>
                     </div>
                 </div>
 
@@ -34,7 +34,7 @@
                     <img src="/images/jumbotron/jumbotron3.png" alt="Srebrni Mjesec #3">
                     <div class="carousel-caption">
                         <h1>Pronađi nas</h1>
-                        <a href="#mjesto" class="btn btn-default btn-xl">Saznaj lokaciju</a>
+                        <a href="#googleMap" class="btn btn-default btn-xl">Saznaj lokaciju</a>
                     </div>
                 </div>
             </div>
@@ -70,38 +70,6 @@
         </div>
 {{-----------------------------------------------------------------}}
 
-
-{{--Drugi salon 5 Stars
---------------------------------------------------------------------------------------------}}
-<div class="stars">
-<div class="container">
-    <div class="row">
-
-    </div>
-</div>
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-xs-6">
-            <img src="images/5stars/18.jpg" />
-        </div>
-        <div class="col-xs-6 text-center">
-            <div class="col-xs-12 text-center">
-                <h1>Frizerski salon 5 Stars</h1>
-            </div><p>Uz naš glavni salon Srebrni Mjesec, imamo kapacitet za raditi više frizura istovremeno u dva salona.</p>
-            <p>Naš drugi salon nalazi se u blizini.</p>
-            {{--<button class="btn btn-default btn-xl" data-toggle="collapse" data-target="#5stars">Saznaj više</button>--}}
-        </div>
-    </div>
-</div>
-</div>
-{{--<div id="5stars" class="container collapse stars">--}}
-{{--<div class="row">--}}
-{{--<div class="col-xs-12 text-center">--}}
-{{--<p>Uz naš glavni salon Srebrni Mjesec, imamo kapacitet za raditi više frizura istovremeno u dva salona.</p>--}}
-{{--</div>--}}
-{{--</div>--}}
-{{--</div>--}}
-{{-----------------------------------------------------------------}}
 
 {{--Slike prostora
 --------------------------------------------------------------------------------------------}}
@@ -263,6 +231,44 @@
 {{-----------------------------------------------------------------}}
 
 
+{{--Drugi salon 5 Stars
+--------------------------------------------------------------------------------------------}}
+<div class="container-fluid stars">
+    <h1 class="text-center">Frizerski salon 5 Stars</h1>
+</div>
+<div class="stars">
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-xs-6">
+                <img src="images/5stars/18.jpg" />
+            </div>
+            <div class="col-xs-6">
+
+                <p>Frizerski salon 5 Stars otvoren je vec 17
+                    godina u kome možete ostvariti sve vaše želje povodom frizerskih usluga sa svim mogućim popustima
+                    i najnižim cjenama. </p>
+                <p>Salon se nalazi u Flavijevskoj 20 dođite i posjetite nas i uvjerite se u
+                    našu kvalitetu željno vas očekujemo.</p>
+                {{--<button class="btn btn-default btn-xl" data-toggle="collapse" data-target="#5stars">Saznaj više</button>--}}
+            </div>
+
+        </div>
+    </div>
+</div>
+{{--<div id="5stars" class="container-fluid collapse stars">--}}
+    {{--<div class="row">--}}
+        {{--<div class="col-xs-6 text-center">--}}
+            {{--<p>Salon se nalazi u <b>Flavijevskoj 20</b> dodite i posjetite nas i uvjerite se u nasu kvalitetu zeljno vas ocekujemo.</p>--}}
+        {{--</div>--}}
+        {{--<div class="col-md-6">--}}
+            {{--<img src="images/5stars/18.jpg" />--}}
+        {{--</div>--}}
+    {{--</div>--}}
+{{--</div>--}}
+{{-----------------------------------------------------------------}}
+
 
 {{--Prikaz popusta
 --------------------------------------------------------------------------------------------}}
@@ -289,13 +295,9 @@
 
 {{--Google Maps Start
 --------------------------------------------------------------------------------------------}}
-        <div id="mjesto" class="container-fluid lokacija">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div id="googleMap"></div>
-                </div>
-            </div>
-        </div>
+
+        <div id="googleMap"></div>
+
 
 
         <script>

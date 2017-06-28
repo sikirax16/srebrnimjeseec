@@ -15,7 +15,6 @@
         <div id="nSM" class="collapse navbar-collapse navbar-right">
             <ul class="nav navbar-nav">
                 <li><a href="/">Naslovna</a></li>
-                {{--<li><a href="5stars">5 Stars</a></li>--}}
                 <li><a href="galerija">Galerija</a></li>
                 <li><a href="cjenik">Cjenik</a></li>
             </ul>

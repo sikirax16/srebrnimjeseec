@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="css/baguetteBox.css">
 
         <!-- Fonts -->
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
             {{--za naslove--}}
         <link href="https://fonts.googleapis.com/css?family=Mogra" rel="stylesheet">

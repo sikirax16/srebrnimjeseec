@@ -176,17 +176,18 @@
                                     @php ($counter++)
                                 @endif
                                     {!! Form::open(array('url'=>'home/depilacija_up','method'=>'PUT')) !!}
-                                    <div class="col-md-7">
+                                    <div class="col-md-9">
                                         {{ Form::hidden('id', $price->id) }}
                                         <b>Naziv:</b> {!! Form::text('naziv_d', $price->naziv) !!}
                                         <b>Cijena:</b> {!! Form::number('cijena_d', $price->cijena) !!}kn
+                                        <b>+ (vosak)</b> {!! Form::number('vosak', $price->vosak) !!}kn
                                     </div>
-                                    {!! Form::submit('Update', array('class'=>'btn btn-lg btn-success col-md-2 gumb'))!!}
+                                    {!! Form::submit('Update', array('class'=>'btn btn-lg btn-success col-md-1 gumb'))!!}
                                     {!! Form::close() !!}
 
                                     {!! Form::open(array('url'=>'home/depilacija_de','method'=>'DELETE')) !!}
                                     {{ Form::hidden('id', $price->id) }}
-                                    {!! Form::submit('Delete', array('class'=>'btn btn-lg btn-danger col-md-2 gumb'))!!}
+                                    {!! Form::submit('Delete', array('class'=>'btn btn-lg btn-danger col-md-1 gumb'))!!}
                                     {!! Form::close() !!}
                                 </div>
                             @endforeach
@@ -197,11 +198,12 @@
                     <div class="form-group">
                         <h2>Dodaj novu cijenu depilacije</h2><hr>
                         {!! Form::open(array('url'=>'home/depilacija','method'=>'POST')) !!}
-                        <div class="col-xs-6">
+                        <div class="col-xs-9">
                             <b>Naziv:</b> {!! Form::text('naziv_d') !!}
                             <b>Cijena:</b> {!! Form::number('cijena_d') !!}kn
+                            <b>+ (vosak)</b> {!! Form::number('vosak') !!}kn
                         </div>
-                        {!! Form::submit('Submit', array('class'=>'btn btn-lg btn-primary col-md-3'))!!}
+                        {!! Form::submit('Submit', array('class'=>'btn btn-lg btn-primary col-md-2'))!!}
                         {!! Form::close() !!}
                     </div>
                 </div>
