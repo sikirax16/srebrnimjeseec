@@ -22,5 +22,38 @@
                 </div>
             </div>
         </div>
+        {{--<div class="row">--}}
+            {{--<div class="col-xs-12">--}}
+                {{--<ul class="list-inline">--}}
+                    {{--<li>SREBRNI MJESEC jednostavno društvo s ograničenom odgovornošću za proizvodnju, trgovinu i usluge</li>--}}
+                    {{--<li>SREBRNI MJESEC j.d.o.o. je upisana u registar Trgovačkog suda u Pazinu</li>--}}
+                    {{--<li>Sjedište: Teslina 55 51200 Pula Hrvatska</li>--}}
+                    {{--<li>OIB: 16460048361</li>--}}
+                    {{--<li>MBS: 040310704</li>--}}
+                    {{--<li>Račun otvoren kod Zagrebačka banka sa sjedištem Trg Josipa Bana Jelačića 10</li>--}}
+                    {{--<li>IBAN: 1723600001102369756</li>--}}
+                    {{--<li>Temeljni kapital 10,00 kuna uplaćen u cijelosti</li>--}}
+                    {{--<li>Član uprave: Sara Kadić, vlasnik i direktor </li>--}}
+                {{--</ul>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+
+
+        <div class="row">
+            <div class="col-xs-12">
+                <ul class="list-inline">
+                    <li>SREBRNI MJESEC jednostavno društvo s ograničenom odgovornošću za proizvodnju, trgovinu i usluge |
+                        SREBRNI MJESEC j.d.o.o. je upisana u registar Trgovačkog suda u Pazinu |
+                        Sjedište: Teslina 55 51200 Pula Hrvatska |
+                        OIB: 16460048361 |
+                        MBS: 040310704 |
+                        Račun otvoren kod Zagrebačka banka sa sjedištem Trg Josipa Bana Jelačića 10 |
+                        IBAN: 1723600001102369756 |
+                        Temeljni kapital 10,00 kuna uplaćen u cijelosti |
+                        Član uprave: Sara Kadić, vlasnik i direktor </li>
+                </ul>
+            </div>
+        </div>
+
     </div>
 </footer>

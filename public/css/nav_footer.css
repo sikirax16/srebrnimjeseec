@@ -147,3 +147,9 @@ footer a:hover {
 #social-em:hover {
     color: #f39c12;
 }
+
+
+li {
+    font-size: 0.8em;
+    color: silver;
+}

@@ -464,8 +464,8 @@
 --------------------------------------------------
 -------------------------------------------------- */
 #googleMap {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    /*-webkit-filter: grayscale(100%);*/
+    /*filter: grayscale(100%);*/
     height: 0;
     overflow: hidden;
     padding-bottom: 35%;
