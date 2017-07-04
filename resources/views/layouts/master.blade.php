@@ -7,6 +7,10 @@
 
         <title>Srebrni Mjesec - <?= $name; ?></title>
 
+
+        <link rel="shortcut icon" href="{{ asset('images/favicon.ico') }}">
+
+
         <!-- Bootstrap core CSS -->
         <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" type="text/css">
         <link rel="stylesheet" href="css/bootstrap/bootstrap-theme.min.css" type="text/css">
@@ -33,6 +37,7 @@
     <body>
 
         @include('layouts.nav')
+        @include('layouts.analytics')
 
         @yield('content')
 
