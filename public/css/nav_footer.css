@@ -1,28 +1,3 @@
-/*.brand-centered {*/
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*position: absolute;*/
-    /*width: 100%;*/
-    /*left: 0;*/
-    /*top: 0;*/
-/*}*/
-/*.brand-centered img {*/
-    /*margin-top: 20px;*/
-    /*width: 300px;*/
-    /*opacity: 1;*/
-/*}*/
-/*.brand-centered .navbar-brand {*/
-    /*display: flex;*/
-    /*align-items: center;*/
-/*}*/
-/*.navbar-toggle {*/
-     /*z-index: 1;*/
- /*}*/
-
-/*
-    navbar colors
-*/
-
 .navbar-custom {
     background: url("/images/navigacija.jpg") no-repeat;
     width: 100%;
@@ -52,6 +27,7 @@
 
 .navbar-custom .navbar-nav > li > a:hover, .nav > li > a:focus, .navbar-custom .navbar-nav .open>a  {
     background-color: blue;
+    border-radius: 2%;
     color: gold;
 }
 
@@ -70,13 +46,19 @@
     background-color: darkblue;
 }
 
+.navbar-custom .nav .active  {
+    color: gold;
+    background: rgba(65, 105, 225, 0.3);
+    border-radius: 2%;
+}
+
 
 
 /*
     footer
 */
 footer {
-    padding-top: 1%;
+    padding-top: 2%;
     background-color: whitesmoke;
     font-family: 'Kanit', sans-serif;
 }
@@ -91,13 +73,11 @@ footer a:hover {
     text-decoration: none;
 }
 .social-buttons i{
-    /*text-align: center;*/
-    /*font-size:30px;*/
     color:royalblue;
 }
 .social-buttons img{
-    height:45px;
-    width:45px;
+    height:35px;
+    width:35px;
 }
 
 
@@ -108,7 +88,6 @@ footer a:hover {
 .author img {
     width: 60px;
     height: 60px;
-    /*border-radius: 50px;*/
 }
 .author img:hover {
     cursor:default;
@@ -134,22 +113,14 @@ footer a:hover {
     -o-transition-duration: 0.5s;
 }
 
-/*
-    Multicoloured Hover Variations
-*/
-
-#social-fb:hover {
-    color: #3B5998;
-}
-#social-in:hover {
-    color: #4099FF;
-}
-#social-em:hover {
-    color: #f39c12;
-}
-
-
 li {
     font-size: 0.8em;
     color: silver;
+}
+
+
+@media screen and (max-width: 600px) {
+    footer p {
+        font-size:15px;
+    }
 }

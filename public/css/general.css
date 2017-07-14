@@ -1,8 +1,10 @@
+@charset "utf-8";
+
 body {
-    /*background-color: royalblue;*/
     background: url("/images/pozadina/pozadina4.jpg") no-repeat fixed;
     background-size: cover;
-    font-family: 'Mogra', cursive;
+    font-family: 'Mogra','Bookman Old Style', 'Arial', cursive;
+    /*font-family: 'Courgette', cursive;*/
 }
 img {
     width: 100%;
@@ -10,10 +12,7 @@ img {
 }
 
 h1 {
-    background: url("/images/font2.png") -180px -80px;
-    /*background-size: cover;*/
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    color: yellow;
     text-align: center;
     text-transform: capitalize;
     font-size: 5em;
@@ -23,7 +22,7 @@ p {
     font-size: 2em;
     color: white;
     text-align: center;
-    font-family: 'Kanit', sans-serif;
+    font-family: 'Kanit', 'Franklin Gothic Demi', 'Times New Roman', sans-serif;
 }
 
 .sadrzaj {
@@ -44,6 +43,9 @@ p {
     p {
         font-size: 1.5em;
     }
+    .sadrzaj2 {
+        padding-top: 2%;
+    }
 }
 @media screen and (max-width: 1000px) {
     h1 {
@@ -51,6 +53,9 @@ p {
     }
     p {
         font-size: 1.3em;
+    }
+    .sadrzaj2 {
+        padding-top: 3%;
     }
 }
 @media screen and (max-width: 800px) {
@@ -60,6 +65,9 @@ p {
     p {
         font-size: 1.2em;
     }
+    .sadrzaj2 {
+        padding-top: 6%;
+    }
 }
 @media screen and (max-width: 600px) {
     h1 {
@@ -68,6 +76,9 @@ p {
     p {
         font-size: 1em;
     }
+    .sadrzaj {
+        padding-top: 8%;
+    }
 }
 @media screen and (max-width: 450px) {
     h1 {
@@ -75,6 +86,9 @@ p {
     }
     p {
         font-size: 0.7em;
+    }
+    .sadrzaj2 {
+        padding-top: 10%;
     }
 }
 

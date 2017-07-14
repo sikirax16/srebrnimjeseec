@@ -9,7 +9,7 @@ class DefaultController extends Controller
  public function index()
  {
      return view('posts/index', [
-         'name' => 'Naslovna'
+         'name' => 'Frizerski salon'
      ]);
  }
 }

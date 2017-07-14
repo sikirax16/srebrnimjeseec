@@ -118,7 +118,7 @@
                                         <td><p class="text-left">{{ $price->naziv }}</p></td>
                                         <td><p class="text-right">{{ $price->cijena }} kn</p></td>
                                         @if($price->vosak != 0)
-                                            <td><p class="text-right">+ {{ $price->vosak }} kn</p></td>
+                                            <td><p class="text-right">{{ $price->vosak }} kn</p></td>
                                         @else
                                             <td><p></p></td>
                                         @endif

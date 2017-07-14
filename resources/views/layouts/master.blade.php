@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{ config('app.locale') }}">
     <head>
-        <meta charset="utf-8">
+        {{--<meta charset="UTF-8">--}}
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="U salonu Srebrni Mjesec možete dobiti sve najbolje usluge. Salon je opremljen vrhunskom kvalitetom sa velikom ugodnošću u kojem su zaposlene 4 vrhunske frizerke. Tel: 052/418-900" />
 
-        <title>Srebrni Mjesec - <?= $name; ?></title>
+        <title>Srebrni Mjesec j.d.o.o. - <?= $name; ?></title>
 
 
         <link rel="shortcut icon" href="{{ asset('images/favicon.ico') }}">
@@ -21,11 +23,10 @@
         <!-- Fonts -->
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-            {{--za naslove--}}
-        <link href="https://fonts.googleapis.com/css?family=Mogra" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
-            {{--za text--}}
-        <link href="https://fonts.googleapis.com/css?family=Kanit:500" rel="stylesheet">
+        {{--Google fonts--}}
+        <link href="https://fonts.googleapis.com/css?family=Kanit|Mogra|Nosifer|Roboto+Slab&amp;subset=latin-ext" rel="stylesheet">
+
+
 
         <!-- Costum CSS -->
         <link href="css/nav_footer.css" rel="stylesheet">

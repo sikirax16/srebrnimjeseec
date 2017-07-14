@@ -9,7 +9,7 @@
 
                 <div class="row">
                     @foreach($images as $image)
-                        <div class="col-sm-4 col-md-3">
+                        <div class="col-xs-4 col-md-3">
                             <a class="lightbox" href="frizure\{{ $image->original_filename }}">
                                 <img src="frizure\{{ $image->original_filename }}" alt="{{ $image->id }}">
                             </a>

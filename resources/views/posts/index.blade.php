@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-{{--<div class="sadrzaj">--}}
+<div class="sadrzaj2">
 {{--Početak carousel-a, prikaz tri glavne slike
 --------------------------------------------------------------------------------------------}}
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -181,6 +181,22 @@
             </div>
         </div>
 
+{{--Slike masaža 1. dio
+--------------------------------------------------------------------------------------------}}
+    <div class="container-fluid img-container dark">
+        <div class="row row-eq-height">
+
+            <div class="col-xs-4">
+                <img src="images/srebrni_mjesec/33.jpg" />
+            </div>
+            <div class="col-xs-4">
+                <img src="images/srebrni_mjesec/31.jpg" />
+            </div>
+            <div class="col-xs-4">
+                <img src="images/srebrni_mjesec/34.jpg" />
+            </div>
+        </div>
+    </div>
 {{--Ponuda masaža
 --------------------------------------------------------------------------------------------}}
         <div class="container masage-ponuda">
@@ -210,9 +226,26 @@
             </div>
         </div>
 
+{{--Slike masaža 2. dio
+--------------------------------------------------------------------------------------------}}
+    <div class="container-fluid img-container">
+        <div class="row row-eq-height">
+
+            <div class="col-xs-4">
+                <img src="images/srebrni_mjesec/30.jpg" />
+            </div>
+            <div class="col-xs-4">
+                <img src="images/srebrni_mjesec/32.jpg" />
+            </div>
+            <div class="col-xs-4">
+                <img src="images/srebrni_mjesec/35.jpg" />
+            </div>
+        </div>
+    </div>
+
 {{--Promocija masaža
 --------------------------------------------------------------------------------------------}}
-        <div class="container masage-promotion">
+        <div class="container-fluid masage-promotion">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-4">
                     <i class="glyphicon glyphicon-star-empty"></i>
@@ -233,10 +266,9 @@
 
 {{--Drugi salon 5 Stars
 --------------------------------------------------------------------------------------------}}
-<div class="container-fluid stars">
-    <h1 class="text-center">Frizerski salon 5 Stars</h1>
-</div>
+
 <div class="stars">
+    <h1 class="text-center">Frizerski salon 5 Stars</h1>
     <div class="container-fluid">
 
         <div class="row">
@@ -251,27 +283,24 @@
                     i najnižim cjenama. </p>
                 <p>Salon se nalazi u Flavijevskoj 20 dođite i posjetite nas i uvjerite se u
                     našu kvalitetu željno vas očekujemo.</p>
-                {{--<button class="btn btn-default btn-xl" data-toggle="collapse" data-target="#5stars">Saznaj više</button>--}}
             </div>
 
         </div>
     </div>
 </div>
-{{--<div id="5stars" class="container-fluid collapse stars">--}}
-    {{--<div class="row">--}}
-        {{--<div class="col-xs-6 text-center">--}}
-            {{--<p>Salon se nalazi u <b>Flavijevskoj 20</b> dodite i posjetite nas i uvjerite se u nasu kvalitetu zeljno vas ocekujemo.</p>--}}
-        {{--</div>--}}
-        {{--<div class="col-md-6">--}}
-            {{--<img src="images/5stars/18.jpg" />--}}
-        {{--</div>--}}
-    {{--</div>--}}
-{{--</div>--}}
 {{-----------------------------------------------------------------}}
 
 
 {{--Prikaz popusta
 --------------------------------------------------------------------------------------------}}
+       {{--<div class="container-fluid popust-img">--}}
+           {{--<div class="row">--}}
+               {{--<div class="col-xs-12">--}}
+                   {{--<img class="popust-img" src="/images/5stars/21.jpg" />--}}
+               {{--</div>--}}
+           {{--</div>--}}
+       {{--</div>--}}
+
         <div class="container-fluid popust">
             <div class="popust-content">
                 <div class="row">
@@ -285,7 +314,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
 
 {{-----------------------------------------------------------------}}
@@ -320,29 +348,29 @@
                 srebrni_mjesec = new google.maps.Marker({
                     map: map,
                     position: new google.maps.LatLng(44.8721746,13.84875569999997),
-                    icon: 'http://m.schuepfen.ch/icons/helveticons/black/60/Pin-location.png'
+                    icon: 'images/pin.svg'
                 });
                 infowindowSM = new google.maps.InfoWindow({
                     content:'<strong>Frizerski Salon Srebrni Mjesec</strong><br>Istarska 17 Pula<br>'
                 });
                 google.maps.event.addListener(srebrni_mjesec, 'click', function(){
                     infowindowSM.open(map,srebrni_mjesec);
-                })
+                });
                 infowindowSM.open(map,srebrni_mjesec);
 
     //  Marker za salon 5Stars
                 stars = new google.maps.Marker({
                     map: map,
                     position: new google.maps.LatLng(44.875189, 13.850461),
-                    icon: 'http://m.schuepfen.ch/icons/helveticons/black/60/Pin-location.png'
+                    icon: 'images/pin.svg'
                 });
                 infowindow = new google.maps.InfoWindow({
                     content:'<strong>Frizerski Salon 5 Stars</strong><br>Flavijevska 20 Pula<br>'
                 });
                 google.maps.event.addListener(stars, 'click', function(){
                     infowindow.open(map,stars);
-                })
-                infowindow.open(map,stars);
+                });
+//                infowindow.open(map,stars);
 
 
                 //Resize Function
@@ -351,6 +379,18 @@
                     google.maps.event.trigger(map, "resize");
                     map.setCenter(center);
                 });
+
+
+                var markers = [srebrni_mjesec, stars];
+
+                var newBoundary = new google.maps.LatLngBounds();
+
+                for(index in markers){
+                    var position = markers[index].position;
+                    newBoundary.extend(position);
+                }
+
+                map.fitBounds(newBoundary);
             }
             google.maps.event.addDomListener(window, 'load', myMap);
         </script>
@@ -358,5 +398,5 @@
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwnQQXU3ZGZZR_vQc1n6bO8jVGvGcIU6M&callback=myMap"></script>
 {{-----------------------------------------------------------------}}
 
-{{--</div>--}}
+</div>
 @endsection
